@@ -1,0 +1,31 @@
+﻿# Options are specified as lines starting with "#!"
+# Comments are lines starting with ";" or "#"
+
+# To define the SR class public instead of internal (default):
+##! accessor_class_accessibility = public
+#! culture_info = System.Globalization.CultureInfo.CurrentUICulture
+
+[strings]
+# ArgumentValidation
+ExceptionEmptyString(string name) = 变量 '{0}' 不能为空.
+ExceptionEnumerationNotDefined(string variableName, string typeName) = {0}不是{1}的一个可选枚举值.
+ExceptionExpectedType(string typeName) = 不是期待的'{0}'值.
+ExceptionByteArrayValueMustBeGreaterThanZeroBytes = 参数不能是一个零长字节数组.
+ExceptionInvalidNullNameArgument(string name) = '{0}' 不能为NULL或是一个空字符串.
+ExceptionNotValidRegexExpress(string regex) = '{0}'不是一个正确的正达表达式.
+ExceptionNullOrZeroArray(string paramName) ='{0}'参数不能是NULL或零长数组
+ExceptionInvalidatePathString(string paramName)='{0}'参数不是一个有效的路径字符串。
+# IO
+ExceptionInvalidFilterExpress(string filter) = 不正确的过滤表达式'{0}'.
+ExceptionNeedAbsolutePath(string paramName) =参数'{0}'要求是一个绝对路径值。
+ExceptionCantBeDriveString(string paramName) =参数'{0}'不能是驱动器值。
+ExceptionDriveIsnReady(string drivename)=驱动器'{0}'没有准备好.
+ExceptionFileNotExist(string fileName)=文件'{0}'不存在。
+#IO.Storage
+ExceptionInvalidStorageName = 不正确的复合文档命名。
+ExceptionElementNotExist = 不存在指定的流或存储。
+ExceptionElementNameExist = 已存在相同的流或存储名称。
+# String
+ExceptionErrorEmailString(string EmailString) = '{0}'不是正确的Email格式。
+# Instrumentation strings
+LineSeperator = -----------------------------------------------------------

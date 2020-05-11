@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{32FD579D-8D8F-4B92-9AB2-088C882B0F86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExpertLib</RootNamespace>
+    <AssemblyName>IO</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChnCharInfo">
+      <HintPath>..\ChnCharInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\lib\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controls\Charts\BaseChart.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\Charts\BaseChart.Designer.cs">
+      <DependentUpon>BaseChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ControlHelper.cs" />
+    <Compile Include="Controls\Enum.cs" />
+    <Compile Include="Controls\Field.cs" />
+    <Compile Include="Controls\TitleEditor\TextBoxEx.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TextBoxEx.designer.cs">
+      <DependentUpon>TextBoxEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleCombox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleCombox.Designer.cs">
+      <DependentUpon>TitleCombox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleControl.Designer.cs">
+      <DependentUpon>TitleControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleDate.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleDate.Designer.cs">
+      <DependentUpon>TitleDate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TitleEditor\TitleTextBox.Designer.cs">
+      <DependentUpon>TitleTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\SqliteHelper.cs" />
+    <Compile Include="Dialogs\DbConnectDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\DbConnectDialog.designer.cs">
+      <DependentUpon>DbConnectDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\LogDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\LogDialog.designer.cs">
+      <DependentUpon>LogDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialogs\SignDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SignDialog.Designer.cs">
+      <DependentUpon>SignDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\NativeMethods.cs" />
+    <Compile Include="DataBase\SqlHelper.cs" />
+    <Compile Include="Utils\ChinesePinyin.cs" />
+    <Compile Include="IO\FileCtr.cs" />
+    <Compile Include="IO\File\FileFilter.cs" />
+    <Compile Include="IO\File\FileIOHelper.cs" />
+    <Compile Include="IO\File\FileSystemScanner.cs" />
+    <Compile Include="IO\Formula\CalcStack.cs" />
+    <Compile Include="IO\Formula\Calculator.cs" />
+    <Compile Include="IO\Formula\Evaluator.cs" />
+    <Compile Include="IO\Formula\ExecutionItem.cs" />
+    <Compile Include="IO\Formula\ExecutionQueue.cs" />
+    <Compile Include="IO\Formula\OperatorStack.cs" />
+    <Compile Include="IO\Formula\Parser.cs" />
+    <Compile Include="IO\Formula\Variant.cs" />
+    <Compile Include="IO\File\INIFile.cs" />
+    <Compile Include="IO\File\IScanFilter.cs" />
+    <Compile Include="IO\Memory\ArgumentValidation.cs" />
+    <Compile Include="IO\Memory\Const.cs" />
+    <Compile Include="IO\Memory\Convert.cs" />
+    <Compile Include="IO\Memory\ObjectPool.cs" />
+    <Compile Include="IO\Memory\SR.cs" />
+    <Compile Include="IO\NXLib.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IO\Storage\NativeMethods.cs" />
+    <Compile Include="IO\Storage\StgElementInfo.cs" />
+    <Compile Include="IO\Storage\Storage.cs" />
+    <Compile Include="IO\Storage\StorageHelper.cs" />
+    <Compile Include="IO\Storage\StorageStream.cs" />
+    <Compile Include="IO\File\StringFilter.cs" />
+    <Compile Include="IO\File\TxtFileEncoding.cs" />
+    <Compile Include="Utils\Ftp2.cs" />
+    <Compile Include="Utils\FtpCtrl.cs" />
+    <Compile Include="Utils\GetSystemIcon.cs" />
+    <Compile Include="Utils\RegexCollection.cs" />
+    <Compile Include="Utils\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IO\Formula\vssver.scc" />
+    <None Include="IO\Memory\SR.strings" />
+    <None Include="IO\Memory\vssver.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\Charts\BaseChart.resx">
+      <DependentUpon>BaseChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TitleEditor\TitleCombox.resx">
+      <DependentUpon>TitleCombox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TitleEditor\TitleControl.resx">
+      <DependentUpon>TitleControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TitleEditor\TitleDate.resx">
+      <DependentUpon>TitleDate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\DbConnectDialog.resx">
+      <DependentUpon>DbConnectDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\LogDialog.resx">
+      <DependentUpon>LogDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SignDialog.resx">
+      <DependentUpon>SignDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IO\Memory\SR.srt.resx" />
+    <EmbeddedResource Include="Controls\TitleEditor\TitleTextBox.resx">
+      <DependentUpon>TitleTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

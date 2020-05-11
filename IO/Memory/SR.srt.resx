@@ -1,0 +1,114 @@
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="ResMimeType">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="Version">
+    <value>1.0.0.0</value>
+  </resheader>
+  <resheader name="Reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="Writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="stringSource">
+    <value>J:\ExpertLib\Common\SR.strings</value>
+  </resheader>
+  <resheader name="culture_info">
+    <value>System.Globalization.CultureInfo.CurrentUICulture</value>
+  </resheader>
+  <data name="ExceptionEmptyString">
+    <value>变量 '{0}' 不能为空.</value>
+    <comment>string name</comment>
+  </data>
+  <data name="ExceptionEnumerationNotDefined">
+    <value>{0}不是{1}的一个可选枚举值.</value>
+    <comment>string variableName, string typeName</comment>
+  </data>
+  <data name="ExceptionExpectedType">
+    <value>不是期待的'{0}'值.</value>
+    <comment>string typeName</comment>
+  </data>
+  <data name="ExceptionByteArrayValueMustBeGreaterThanZeroBytes">
+    <value>参数不能是一个零长字节数组.</value>
+  </data>
+  <data name="ExceptionInvalidNullNameArgument">
+    <value>'{0}' 不能为NULL或是一个空字符串.</value>
+    <comment>string name</comment>
+  </data>
+  <data name="ExceptionNotValidRegexExpress">
+    <value>'{0}'不是一个正确的正达表达式.</value>
+    <comment>string regex</comment>
+  </data>
+  <data name="ExceptionNullOrZeroArray">
+    <value>'{0}'参数不能是NULL或零长数组</value>
+    <comment>string paramName</comment>
+  </data>
+  <data name="ExceptionInvalidatePathString">
+    <value>'{0}'参数不是一个有效的路径字符串。</value>
+    <comment>string paramName</comment>
+  </data>
+  <data name="ExceptionInvalidFilterExpress">
+    <value>不正确的过滤表达式'{0}'.</value>
+    <comment>string filter</comment>
+  </data>
+  <data name="ExceptionNeedAbsolutePath">
+    <value>参数'{0}'要求是一个绝对路径值。</value>
+    <comment>string paramName</comment>
+  </data>
+  <data name="ExceptionCantBeDriveString">
+    <value>参数'{0}'不能是驱动器值。</value>
+    <comment>string paramName</comment>
+  </data>
+  <data name="ExceptionDriveIsnReady">
+    <value>驱动器'{0}'没有准备好.</value>
+    <comment>string drivename</comment>
+  </data>
+  <data name="ExceptionFileNotExist">
+    <value>文件'{0}'不存在。</value>
+    <comment>string fileName</comment>
+  </data>
+  <data name="ExceptionInvalidStorageName">
+    <value>不正确的复合文档命名。</value>
+  </data>
+  <data name="ExceptionElementNotExist">
+    <value>不存在指定的流或存储。</value>
+  </data>
+  <data name="ExceptionElementNameExist">
+    <value>已存在相同的流或存储名称。</value>
+  </data>
+  <data name="ExceptionErrorEmailString">
+    <value>'{0}'不是正确的Email格式。</value>
+    <comment>string EmailString</comment>
+  </data>
+  <data name="LineSeperator">
+    <value>-----------------------------------------------------------</value>
+  </data>
+</root>
