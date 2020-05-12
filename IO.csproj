@@ -134,6 +134,12 @@
     <Compile Include="Dialogs\SignDialog.Designer.cs">
       <DependentUpon>SignDialog.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dialogs\SplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialogs\SplashScreen.designer.cs">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Dialogs\SignDialog.resx">
       <DependentUpon>SignDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialogs\SplashScreen.resx">
+      <DependentUpon>SplashScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="IO\Memory\SR.srt.resx" />
     <EmbeddedResource Include="Controls\TitleEditor\TitleTextBox.resx">
