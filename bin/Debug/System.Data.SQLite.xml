@@ -2649,17 +2649,6 @@
             SQLITE_DBSTATUS_CACHE_USED_SHARED is always 0.
             </summary>
         </member>
-        <member name="F:System.Data.SQLite.SQLiteStatusOpsEnum.SQLITE_DBSTATUS_CACHE_SPILL">
-            <summary>
-            This parameter returns the number of dirty cache entries that have
-            been written to disk in the middle of a transaction due to the page
-            cache overflowing. Transactions are more efficient if they are
-            written to disk all at once. When pages spill mid-transaction, that
-            introduces additional overhead. This parameter can be used help
-            identify inefficiencies that can be resolved by increasing the cache
-            size.
-            </summary>
-        </member>
         <member name="T:System.Data.SQLite.SQLiteConfigDbOpsEnum">
             <summary>
             These are the supported configuration verbs for use with the native
@@ -2791,35 +2780,6 @@
         <member name="F:System.Data.SQLite.SQLiteConfigDbOpsEnum.SQLITE_DBCONFIG_ENABLE_VIEW">
             <summary>
             This option is used to enable or disable CREATE VIEW.
-            </summary>
-        </member>
-        <member name="F:System.Data.SQLite.SQLiteConfigDbOpsEnum.SQLITE_DBCONFIG_LEGACY_FILE_FORMAT">
-            <summary>
-            This option activates or deactivates the legacy file format flag.
-            </summary>
-        </member>
-        <member name="F:System.Data.SQLite.SQLiteConfigDbOpsEnum.SQLITE_DBCONFIG_TRUSTED_SCHEMA">
-            <summary>
-            This option tells SQLite to assume that database schemas (i.e. the
-            contents of the sqlite_master tables) are untainted by malicious
-            content.  When the trusted schema option is disabled, SQLite takes
-            additional defensive steps to protect the application from harm
-            including:
-            <![CDATA[<ul>]]>
-            <![CDATA[<li>]]>
-            Prohibit the use of SQL functions inside triggers, views, CHECK
-            constraints, DEFAULT clauses, expression indexes, partial indexes,
-            or generated columns unless those functions are tagged with
-            SQLITE_INNOCUOUS.
-            <![CDATA[</li>]]>
-            <![CDATA[<li>]]>
-            Prohibit the use of virtual tables inside of triggers or views
-            unless those virtual tables are tagged with SQLITE_VTAB_INNOCUOUS.
-            <![CDATA[</ul>]]>
-            This setting defaults to "on" for legacy compatibility, however
-            all applications are advised to turn it off if possible.  This
-            setting can also be controlled using the PRAGMA trusted_schema
-            statement.
             </summary>
         </member>
         <member name="T:System.Data.SQLite.SQLiteTraceFlags">
@@ -3289,34 +3249,6 @@
             <param name="connectionString">
             The connection string to the database to be opened, used, and closed.  If
             this parameter is null, a temporary in-memory databse will be used.
-            </param>
-            <param name="args">
-            The SQL parameter values to be used when building the command object to be
-            executed, if any.
-            </param>
-            <returns>
-            The results of the query -OR- null if no results were produced from the
-            given execution type.
-            </returns>
-        </member>
-        <member name="M:System.Data.SQLite.SQLiteCommand.Execute(System.String,System.Data.SQLite.SQLiteExecuteType,System.Data.CommandBehavior,System.Data.SQLite.SQLiteConnection,System.Object[])">
-            <summary>
-            This method executes a query using the given execution type and command
-            behavior and returns the results.
-            </summary>
-            <param name="commandText">
-            The text of the command to be executed.
-            </param>
-            <param name="executeType">
-            The execution type for the command.  This is used to determine which method
-            of the command object to call, which then determines the type of results
-            returned, if any.
-            </param>
-            <param name="commandBehavior">
-            The command behavior flags for the command.
-            </param>
-            <param name="connection">
-            The connection used to create and execute the command.
             </param>
             <param name="args">
             The SQL parameter values to be used when building the command object to be
@@ -8838,11 +8770,6 @@
             An internal operation failed and it may succeed if retried.
             </summary>
         </member>
-        <member name="F:System.Data.SQLite.SQLiteErrorCode.Error_Snapshot">
-            <summary>
-            The specified snapshot has been overwritten by a checkpoint.
-            </summary>
-        </member>
         <member name="F:System.Data.SQLite.SQLiteErrorCode.IoErr_Read">
             <summary>
             A file read operation failed.
@@ -9038,16 +8965,6 @@
             A database file cannot be opened because a path string conversion operation failed.
             </summary>
         </member>
-        <member name="F:System.Data.SQLite.SQLiteErrorCode.CantOpen_DirtyWal">
-            <summary>
-            No longer used.
-            </summary>
-        </member>
-        <member name="F:System.Data.SQLite.SQLiteErrorCode.CantOpen_SymLink">
-            <summary>
-            A database file is a symbolic link and cannot be opened.
-            </summary>
-        </member>
         <member name="F:System.Data.SQLite.SQLiteErrorCode.Corrupt_Vtab">
             <summary>
             A virtual table is malformed.
@@ -9143,11 +9060,6 @@
             A ROWID constraint failed.
             </summary>
         </member>
-        <member name="F:System.Data.SQLite.SQLiteErrorCode.Constraint_Pinned">
-            <summary>
-            A database cursor is busy and cannot be moved.
-            </summary>
-        </member>
         <member name="F:System.Data.SQLite.SQLiteErrorCode.Notice_Recover_Wal">
             <summary>
             Frames were recovered from the WAL log file.
@@ -9172,11 +9084,6 @@
             <summary>
             Success.  Prevents the extension from unloading until the process
             terminates.
-            </summary>
-        </member>
-        <member name="F:System.Data.SQLite.SQLiteErrorCode.Ok_SymLink">
-            <summary>
-            Success.  The specified file name refers to a symbolic link.
             </summary>
         </member>
         <member name="T:System.Data.SQLite.SQLiteFactory">

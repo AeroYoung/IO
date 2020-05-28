@@ -31,13 +31,12 @@ C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\System.Data.SQLite.dll
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\obj\Debug\ExpertLib.Properties.Resources.resources
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\obj\Debug\ExpertLib.Dialogs.LogDialog.resources
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\obj\Debug\ExpertLib.Dialogs.SignDialog.resources
-C:\Users\yao.yang\Desktop\AnalysisStudio\IO\obj\Debug\IO.csprojAssemblyReference.cache
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\IO.dll.config
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\EntityFramework.dll
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\System.Data.SQLite.EF6.dll
-C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\EntityFramework.xml
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\yao.yang\Desktop\AnalysisStudio\IO\obj\Debug\ExpertLib.Dialogs.SplashScreen.resources
 C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\System.Data.SQLite.xml
-C:\Users\yao.yang\Desktop\AnalysisStudio\IO\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\yao.yang\Desktop\AnalysisStudio\IO\obj\Debug\IO.csprojAssemblyReference.cache
